@@ -9,7 +9,7 @@ Archlinux基础系统的安装和配置可以参考下面的这几篇教程
 ```
 # 安装显卡驱动
 我的是笔记本电脑，双显卡，intel+nvidia，显卡驱动采用prime方案(archlinux-wiki-prime)
-```
+```bash
 sudo pacman -S nvidia nvidia-prime mesa(具体的看wiki
 https://wiki.archlinux.org/index.php/Intel_graphics#Installation）
 ```
