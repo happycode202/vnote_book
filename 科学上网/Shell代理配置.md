@@ -65,6 +65,9 @@ git config --global --unset https.proxy
 ```
 
 ## SSH
+
+- 让ssh通过http或者socks5代理
+
 ```bash
 $HOME/.ssh/config
 
@@ -72,5 +75,7 @@ Host *
     ProxyCommand nc -X 5 -x 127.0.0.1:7890 %h %p
 ```
 
+### 参考资料:
 
+1. https://kanda.me/2019/07/01/ssh-over-http-or-socks/
 
