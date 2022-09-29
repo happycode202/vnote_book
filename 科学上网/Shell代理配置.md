@@ -64,7 +64,13 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 
+## SSH
+```bash
+$HOME/.ssh/config
 
+Host *
+    ProxyCommand nc -X 5 -x 127.0.0.1:7890 %h %p
+```
 
 
 
