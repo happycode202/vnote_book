@@ -1,38 +1,56 @@
-# Windows常见问题集锦
+# Windows软件安装
 
 ## 激活工具：
 
 - [kmspico](https://forums.mydigitallife.net/threads/kmspico-official-thread.65739/)
 - [KMS_VL_ALL_AIO](https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases)
 
+## 免费机场
+
+- [yu-steven/*openit*](https://github.com/yu-steven/openit)
+
+  ```
+  Base64 https://openit.daycat.space/long
+  
+  小火箭 https://openit.daycat.space/https
+  
+  Clash https://openit.daycat.space/clash
+  
+  Quanx https://openit.daycat.space/qx
+  
+  ```
+
+  
+
 ## 翻墙(&代理)工具:
 
-- [virtual+openwrt](https://www.virtualbox.org/wiki/Downloads)  
+- [virtual](https://www.virtualbox.org/wiki/Downloads)  
+- [openwrt](https://drive.google.com/drive/folders/1dqNUrMf9n7i3y1aSh68U5Yf44WQ3KCuh)
 - [Qv2ray](https://github.com/Qv2ray/Qv2ray)+[v2ray](https://github.com/v2ray/v2ray-core)
 - [clash for windows pkg](https://github.com/Fndroid/clash_for_windows_pkg)
 - [V2rayN](https://github.com/2dust/v2rayN)
 
 ## 必要软件:
 
-- [安装chocolate](https://chocolatey.org/install)
-- [notepad++](https://notepad-plus-plus.org/downloads/)
-- [uTools](https://u.tools/)
-- [notepad++](https://notepad-plus-plus.org/downloads/)  
-- [vscode](https://code.visualstudio.com/)  
-- [ffmpeg](https://ffmpeg.org/)  
-- [mpv](https://mpv.io/)  
-- [potpalyer](http://potplayer.daum.net/?lang=zh_CN)  
-- [powertoys](https://github.com/microsoft/PowerToys/releases)  
-- [wox](https://github.com/Wox-launcher/Wox)  
-- [telegram](https://github.com/telegramdesktop/tdesktop)  
-- you-get,youtube-dl:pip install you-get youtube-dl  
-- [clash for windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)  
-- [google-chrome](https://www.google.com/intl/zh-CN/chrome/)   
-- [minGW](https://sourceforge.net/projects/mingw-w64/)
-- [JDK](https://repo.huaweicloud.com/openjdk/)
+- [安装scoop](https://scoop.sh/)
+- [winget](https://github.com/microsoft/winget-cli)
+- [uTools](https://u.tools/)   
 - [microsoft](https://github.com/microsoft)/**[terminal](https://github.com/microsoft/terminal)**
 - [PowerShell](https://github.com/PowerShell)/**[PowerShell](https://github.com/PowerShell/PowerShell)**
 - [microsoft](https://github.com/microsoft)/**[PowerToys](https://github.com/microsoft/PowerToys)**
+
+## winget 安装必要软件
+
+- 生成安装命令的网站:`https://winstall.app/generate`
+
+```powershell
+winget install --id=Notepad++.Notepad++ -e  ; winget install --id=voidtools.Everything -e  ; winget install --id=Wox.Wox -e  ; winget install --id=XunLei.xunlei -e  ; winget install --id=Fndroid.ClashForWindows -e  ; winget install --id=EuSoft.Eudic -e  ; winget install --id=Google.Chrome -e  ; winget install --id=JetBrains.IntelliJIDEA.Ultimate -e  ; winget install --id=Microsoft.VisualStudioCode -e  ; winget install --id=Telegram.TelegramDesktop -e  ; winget install --id=Neovim.Neovim -e  ; winget install --id=yt-dlp.yt-dlp -e  ; winget install --id=Anaconda.Miniconda3 -e  ; winget install --id=Git.Git -e  ; winget install --id=Microsoft.PowerToys -e  ; winget install --id=Microsoft.WindowsTerminal -e  ; winget install --id=Microsoft.PowerShell -e  ; winget install --id=EclipseAdoptium.Temurin.8 -e  ; winget install --id=EclipseAdoptium.Temurin.11.JDK -e  ; winget install --id=EclipseAdoptium.Temurin.17.JDK -e  ; winget install --id=Daum.PotPlayer -e  ; winget install --id=Bandisoft.Bandizip -e ;winget install --id=Oracle.VirtualBox  -e
+```
+
+
+
+
+
 - wsl2
 
 ```bash
@@ -49,8 +67,16 @@ export ALL_PROXY="http://$host_ip:7890"
 1. 当前主机，当前用户的配置
 
    ```powershell
-   if (!(Test-Path -Path $PROFILE)) {
-     New-Item -ItemType File -Path $PROFILE -Force
+   echo $profile	#查看配置文件路径
+   Test-Path $profile	#测试文件路径,看配置文件是否存在
+   New-Item -Path $profile -Type File –Force	#新项 配置文件# 路径 配置文件类型 文件强制
+   function proxy() {
+     $Env:https_proxy="http://localhost:7890"
+     $Env:http_proxy="http://localhost:7890"
+   }
+   function noproxy() {
+     $Env:https_proxy=""
+     $Env:http_proxy=""
    }
    ```
 

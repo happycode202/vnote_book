@@ -15,7 +15,6 @@ scoop config aria2-enable false
 #### 安装常用软件
 
 ```powershell
-scoop install git aria2 miniconda3 everything mpv ffmpeg yt-dlp wox neovim telegram idea-ultimate
+scoop install aria2  mpv ffmpeg  
 ```
-
 
