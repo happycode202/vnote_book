@@ -44,7 +44,7 @@
 - 生成安装命令的网站:`https://winstall.app/generate`
 
 ```powershell
- winget install --id=voidtools.Everything -e  ; winget install --id=XunLei.xunlei -e  ; winget install --id=EuSoft.Eudic -e  ; winget install --id=JetBrains.IntelliJIDEA.Ultimate -e  ; winget install --id=Microsoft.VisualStudioCode -e  ; winget install --id=Telegram.TelegramDesktop -e  ; winget install --id=Neovim.Neovim -e  ; winget install --id=yt-dlp.yt-dlp -e  ; winget install --id=Anaconda.Miniconda3 -e  ; winget install --id=Git.Git -e  ; winget install --id=Microsoft.PowerToys -e  ; winget install --id=Microsoft.WindowsTerminal -e  ; winget install --id=EclipseAdoptium.Temurin.8 -e  ; winget install --id=EclipseAdoptium.Temurin.11.JDK -e  ; winget install --id=EclipseAdoptium.Temurin.17.JDK -e  ; winget install --id=Daum.PotPlayer -e  ; winget install --id=Bandisoft.Bandizip -e ;winget install --id=Oracle.VirtualBox  -e
+ winget install --id=voidtools.Everything -e  ; winget install --id=XunLei.xunlei -e  ; winget install --id=EuSoft.Eudic -e  ; winget install --id=JetBrains.IntelliJIDEA.Ultimate -e  ; winget install --id=Microsoft.VisualStudioCode -e  ; winget install --id=Telegram.TelegramDesktop -e  ; winget install --id=Neovim.Neovim -e  ; winget install --id=yt-dlp.yt-dlp -e  ; winget install --id=Anaconda.Miniconda3 -e  ; winget install --id=Git.Git -e  ; winget install --id=EclipseAdoptium.Temurin.8 -e  ; winget install --id=EclipseAdoptium.Temurin.11.JDK -e  ; winget install --id=EclipseAdoptium.Temurin.17.JDK -e  ; winget install --id=Daum.PotPlayer -e  ; winget install --id=Bandisoft.Bandizip -e ;
 ```
 
 
