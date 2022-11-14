@@ -80,14 +80,18 @@ export ALL_PROXY="http://$host_ip:7890"
    }
    ```
 
-  2. 配置代理
+  2. powershell别名
 
      ```powershell
-     $ notepad++ $profile 
-     添加代理
-     $env:HTTP_PROXY="http://127.0.0.1:7890"
-     $env:HTTPS_PROXY="http://127.0.0.1:7890"
-     $env:ALL_PROXY="http://127.0.0.1:7890"
+     New-Alias -Name vi -Value nvim
+     New-Alias -Name huya -Value C:\Users\sunho\Documents\zhibo\huya.bat
      ```
 
      
+
+3. 配置主题
+
+   ```
+   ```
+
+   
