@@ -70,11 +70,11 @@ export ALL_PROXY="http://$host_ip:7890"
    echo $profile	#查看配置文件路径
    Test-Path $profile	#测试文件路径,看配置文件是否存在
    New-Item -Path $profile -Type File –Force	#新项 配置文件# 路径 配置文件类型 文件强制
-   function proxy() {
+   function openproxy() {
      $Env:https_proxy="http://localhost:7890"
      $Env:http_proxy="http://localhost:7890"
    }
-   function noproxy() {
+   function closeproxy() {
      $Env:https_proxy=""
      $Env:http_proxy=""
    }
