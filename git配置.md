@@ -19,3 +19,4 @@ ssh-keygen -t rsa -C "sunhongleisun@gmail.com"
 git clone git@github.com:happycode202/vnote_book.git (拉取远程库)
 ```
 按照这个顺序操作下来，从远程拉取下来的远程库已经能够正常操作，可以用git push测试下。
+
