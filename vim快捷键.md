@@ -4,4 +4,4 @@
 2. 移动到行尾$
 3. 替换
    1. https://www.jianshu.com/p/b3b2f04c1897
-4. 
+4. 移动到首字母^(shift+6)
