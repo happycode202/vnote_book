@@ -18,3 +18,11 @@ scoop config aria2-enable false
 scoop install aria2  mpv ffmpeg  
 ```
 
+#### 导出已安装软件列表
+
+```powershell
+scoop export > scoop_bak.txt
+```
+
+
+

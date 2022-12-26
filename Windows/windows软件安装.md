@@ -47,10 +47,6 @@
  winget install --id=voidtools.Everything -e  ; winget install --id=XunLei.xunlei -e  ; winget install --id=EuSoft.Eudic -e  ; winget install --id=JetBrains.IntelliJIDEA.Ultimate -e  ; winget install --id=Microsoft.VisualStudioCode -e  ; winget install --id=Telegram.TelegramDesktop -e  ; winget install --id=Neovim.Neovim -e  ; winget install --id=yt-dlp.yt-dlp -e  ; winget install --id=Anaconda.Miniconda3 -e  ; winget install --id=Git.Git -e  ; winget install --id=EclipseAdoptium.Temurin.8 -e  ; winget install --id=EclipseAdoptium.Temurin.11.JDK -e  ; winget install --id=EclipseAdoptium.Temurin.17.JDK -e  ; winget install --id=Daum.PotPlayer -e  ; winget install --id=Bandisoft.Bandizip -e ;
 ```
 
-
-
-
-
 - wsl2
 
 ```bash
@@ -70,28 +66,19 @@ export ALL_PROXY="http://$host_ip:7890"
    echo $profile	#查看配置文件路径
    Test-Path $profile	#测试文件路径,看配置文件是否存在
    New-Item -Path $profile -Type File –Force	#新项 配置文件# 路径 配置文件类型 文件强制
+   
+   
+   chcp 65001
    function openproxy() {
-     $Env:https_proxy="http://localhost:7890"
-     $Env:http_proxy="http://localhost:7890"
+      $Env:https_proxy="http://localhost:7890"
+      $Env:http_proxy="http://localhost:7890"
    }
    function closeproxy() {
-     $Env:https_proxy=""
-     $Env:http_proxy=""
+       $Env:https_proxy=""
+       $Env:http_proxy=""
    }
-   ```
-
-  2. powershell别名
-
-     ```powershell
-     New-Alias -Name vi -Value nvim
-     New-Alias -Name huya -Value C:\Users\sunho\Documents\zhibo\huya.bat
-     ```
-
-     
-
-3. 配置主题
-
-   ```
-   ```
-
+   New-Alias -Name vi -Value nvim
+   New-Alias -Name huya -Value $HOME\Documents\zhibo\huya.bat
+   #oh-my-posh init pwsh --config C:\Users\sunho\amro.omp.json | Invoke-Expression
    
+   ```
