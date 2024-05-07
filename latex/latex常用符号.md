@@ -21,6 +21,26 @@ ctrl+=
 
 ctrl+shift+=
 
+5. 上下等高的点
 
+\cdot
+
+$\cdot$
+
+6. 希腊字母
+
+\alpha \beta \delta \lambda \mu
+
+小写$\alpha \beta \delta \lambda \mu$
+
+大写$\Alpha \Beta \Delta \Lambda \Mu$
 
 https://snaildove.github.io/2017/08/20/LaTeX_symbols/
+
+7. word中 弧长
+
+\overparen{AB}
+
+latex中弧长
+
+$\overset{\frown}{AB}$
