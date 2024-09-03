@@ -80,5 +80,7 @@ export ALL_PROXY="http://$host_ip:7890"
    New-Alias -Name vi -Value nvim
    New-Alias -Name huya -Value $HOME\Documents\zhibo\huya.bat
    #oh-my-posh init pwsh --config C:\Users\sunho\amro.omp.json | Invoke-Expression
+   New-Alias -Name m3u8 -Value E:\tools\N_m3u8DL-RE_Beta_win-x64\N_m3u8DL-RE
+   Set-PSReadLineOption -EditMode Emacs  #启用linux风格的快捷键
    
    ```
