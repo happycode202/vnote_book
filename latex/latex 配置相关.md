@@ -279,6 +279,423 @@ sumatraPDF 配置--选项--命令
 }
 ```
 
+```
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	 "fraction": {
+		"prefix": "fr",
+		"body": [
+			"\\frac{$1}{$2} ",
+		 ],
+		 "description": "fraction"
+	}, 
+	 "partial fraction": {
+		"prefix": "pf",
+		"body": [
+			"\\frac{\\partial $1}{\\partial $2} $3",
+		 ],
+		 "description": "partial fraction"
+	}, 
+	"partial fraction 2": {
+		"prefix": "pft",
+		"body": [
+			"\\frac{\\partial^2 $1}{\\partial {$2}^2} $3",
+		 ],
+		 "description": "partial fraction"
+	}, 
+	 "left right ()": {
+		"prefix": "le",
+		"body": [
+			"\\left( $1\\right) $2",
+		 ],
+		 "description": "big()"
+	}, 
+	 "power": {
+		"prefix": "dj",
+		"body": [
+			"^{$1} ",
+		 ],
+		 "description": "^{}"
+	}, 
+	 "underline": {
+		"prefix": "ud",
+		"body": [
+			"_{$1} $2",
+		 ],
+		 "description": "_{}"
+	}, 
+	"and": {
+		"prefix": "and",
+		"body": [
+			"& $1",
+		 ],
+		 "description": "&"
+	},
+	"cdot": {
+		"prefix": "cd",
+		"body": [
+			"\\cdot $1",
+		 ],
+		 "description": "cdot"
+	},
+	"cdots": {
+		"prefix": "cs",
+		"body": [
+			"\\cdots $1",
+		 ],
+		 "description": "cdots"
+	},
+	 "listing": {
+		"prefix": "ls",
+		"body": [
+			"$1_1,$2_2,\\ldots,$3_n $4",
+		 ],
+		 "description": "x_1,x_2,...,x_n"
+	}, 
+	 "fig": {
+		"prefix": "fig",
+		"body": [
+			"\\begin{figure}[!ht]\n    \\centering\n    \\includegraphics[$2]{$1}\n    \\caption{$3}\n    \\label{$4}\n\\end{figure}",
+		],
+		"description": "fig"
+	}, 
+	"infty": {
+		"prefix": "inf",
+		"body": [
+			"\\infty $1",
+		],
+		"description": "infty"
+	}, 
+	"int upper inf": {
+		"prefix": "ininf",
+		"body": [
+			"\\int^\\infty_{$1} $2",
+		],
+		"description": "infty"
+	}, 
+	"suminf": {
+		"prefix": "suminf",
+		"body": [
+			"\\sum^\\infty_{$1} $2",
+		],
+		"description": "sum upper infty"
+	}, 
+	"table": {
+		"prefix": "tab",
+		"body": [
+			"\\begin{table*}[!ht]\n    \\caption{$1}\n    \\vspace*{3pt}\n    \\renewcommand\\arraystretch{1.5}\n    \\centering\n    \\begin{tabular}{p{3cm}<{\\centering}p{3cm}<{\\centering}p{1.5cm}<{\\centering}p{1.5cm}<{\\centering}}\n        \\toprule\n        $2&&& \\\\\\ \n        \\midrule\n        $3&&& \\\\\\\n        \\bottomrule\n    \\end{tabular}\n\\end{table*}\n$4",
+		],
+		"description": "table"
+	}, 
+	"overline": {
+		"prefix": "ov",
+		"body": [
+			"\\overline{$1}$2",
+		],
+		"description": "overline"
+	}, 
+	"vec": {
+		"prefix": "vec",
+		"body": [
+			"\\overrightarrow{$1}$2",
+		],
+		"description": "overrightarrow"
+	}, 
+	"alpha": {
+		"prefix": "alp",
+		"body": [
+			"\\alpha ",
+		],
+		"description": "alpha"
+	}, 
+	"beta": {
+		"prefix": "bet",
+		"body": [
+			"\\beta ",
+		],
+		"description": "beta"
+	}, 
+	"phi": {
+		"prefix": "phi",
+		"body": [
+			"\\varphi ",
+		],
+		"description": "phi"
+	}, 
+	"pi": {
+		"prefix": "pi",
+		"body": [
+			"\\pi ",
+		],
+		"description": "pi"
+	}, 
+	"mu": {
+		"prefix": "mu",
+		"body": [
+			"\\mu ",
+		],
+		"description": "mu"
+	}, 
+	"int": {
+		"prefix": "int",
+		"body": [
+			"\\int",
+		],
+		"description": "int"
+	}, 
+	"zeta": {
+		"prefix": "zet",
+		"body": [
+			"\\zeta ",
+		],
+		"description": "zeta"
+	}, 
+	"lim_0": {
+		"prefix": "lim0",
+		"body": [
+			"\\lim_{$1 \\rightarrow 0} $2",
+		],
+		"description": "lim x -> 0"
+	}, 
+	"lim_inf": {
+		"prefix": "linf",
+		"body": [
+			"\\lim_{$1 \\rightarrow \\infty} $2",
+		],
+		"description": "lim x -> oo"
+	}, 
+	"liomega": {
+		"prefix": "om",
+		"body": [
+			"\\omega ",
+		],
+		"description": "omega"
+	}, 
+	"frame": {
+		"prefix": "frame",
+		"body": [
+			"\\begin{frame}[fragile]{$1}\n    $2\n\\end{frame}\n",
+		],
+		"description": "frame environment"
+	}, 
+	"cols": {
+		"prefix": "cols",
+		"body": [
+			"\\begin{columns}\n$1\n\\end{columns}",
+		],
+		"description": "columns environment"
+	}, 
+	"col": {
+		"prefix": "col",
+		"body": [
+			"\\begin{column}{$1\\textwidth}\n$2\n\\end{column}$3",
+		],
+		"description": "column environment"
+	}, 
+	"height": {
+		"prefix": "hei",
+		"body": [
+			"height = $1 \\textheight - $2 cm",
+		],
+		"description": "height"
+	}, 
+	"width": {
+		"prefix": "wid",
+		"body": [
+			"width = $1 \\textwidth - $2 cm",
+		],
+		"description": "wid"
+	}, 
+	"item": {
+		"prefix": "it",
+		"body": [
+			"\\begin{itemize}\n    \\item $1 \n\\end{itemize}",
+		],
+		"description": "itemize"
+	}, 
+	"CJK": {
+		"prefix": "cjk",
+		"body": [
+			"\\begin{CJK*}{UTF8}{gbsn}\n    $1 \n\\end{CJK*}",
+		],
+		"description": "CJK-song"
+	}, 
+	"Noindentqquad": {
+		"prefix": "nq",
+		"body": [
+			"\\noindent\\qquad ",
+		],
+		"description": "缩进"
+	}, 
+	"define": {
+		"prefix": "ejgs",
+		"body": [
+			"\\begin{ejgs}\\textbf{$1}\\\\\\\n    \\phantom{占位} $2 \n\\end{ejgs}",
+		],
+		"description": "ejgs环境"
+	}, 
+	"Delta": {
+		"prefix": "del",
+		"body": [
+			"\\Delta",
+		],
+		"description": "Delta"
+	}, 
+	"delta": {
+		"prefix": "delta",
+		"body": [
+			"\\delta",
+		],
+		"description": "delta"
+	},
+	"rho": {
+		"prefix": "rho",
+		"body": [
+			"\\rho ",
+		],
+		"description": "rho"
+	},
+	"BoldinMath": {
+		"prefix": "cu",
+		"body": [
+			"\\textit{\\textbf{$1}} ",
+		],
+		"description": "bold"
+	},
+	"Boldinalpha": {
+		"prefix": "calp",
+		"body": [
+			"\\boldsymbol{$1} ",
+		],
+		"description": "bold"
+	},
+	"dd frac": {
+		"prefix": "df",
+		"body": [
+			"\\frac{\\mathrm{d} $1}{\\mathrm{d} $2} ",
+		],
+		"description": "dd frac"
+	},
+	"times": {
+		"prefix": "ch",
+		"body": [
+			"\\times ",
+		],
+		"description": "times"
+	},
+	"varepsilon": {
+		"prefix": "ep",
+		"body": [
+			"\\varepsilon ",
+		],
+		"description": "varepsilon"
+	},
+	"varepsilon_0": {
+		"prefix": "ep0",
+		"body": [
+			"\\varepsilon_0 ",
+		],
+		"description": "varepsilon_0"
+	},
+	"varepsilon_r": {
+		"prefix": "epr",
+		"body": [
+			"\\varepsilon_r ",
+		],
+		"description": "varepsilon_r"
+	},
+	"dwk": {
+		"prefix": "dwk",
+		"body": [
+			"\\frac{1}{4 \\pi \\varepsilon _{0} } ",
+		],
+		"description": "大学物理的k"
+	},
+	"sigma": {
+		"prefix": "sig",
+		"body": [
+			"\\sigma ",
+		],
+		"description": "sigma"
+	},
+	"partial": {
+		"prefix": "par",
+		"body": [
+			"\\partial ",
+		],
+		"description": "partial"
+	},
+	"sintefblue": {
+		"prefix": "sint",
+		"body": [
+			"\\bf\\large\\color{sintefblue}",
+		],
+		"description": "sintefblue"
+	},
+	"bfsintefblue": {
+		"prefix": "bs",
+		"body": [
+			"\\bf\\color{sintefblue}",
+		],
+		"description": "bfsintefblue"
+	},	
+	"align*": {
+		"prefix": "ali",
+		"body": [
+			"\\begin{align*}\n    $1\n\\end{align*}\n",
+		],
+		"description": "align*"
+	},
+	"sqrt": {
+		"prefix": "sq",
+		"body": [
+			"\\sqrt{$1}",
+		],
+		"description": "sqrt"
+	},
+	"lnot": {
+		"prefix": "ln",
+		"body": [
+			"\\lnot ",
+		],
+		"description": "lnot"
+	},
+	"wedge": {
+		"prefix": "wl",
+		"body": [
+			"\\wedge ",
+		],
+		"description": "wedge"
+	},
+	"vee": {
+		"prefix": "lw",
+		"body": [
+			"\\vee ",
+		],
+		"description": "vee"
+	},
+	"overbar": {
+		"prefix": "ba",
+		"body": [
+			"\\overline{$1} ",
+		],
+		"description": "overline"
+	}
+}
+
+```
 
 
 ### 参考资料
