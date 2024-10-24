@@ -44,7 +44,7 @@
 - 生成安装命令的网站:`https://winstall.app/generate`
 
 ```powershell
- winget install --id=voidtools.Everything -e  ; winget install --id=XunLei.xunlei -e  ; winget install --id=EuSoft.Eudic -e  ; winget install --id=Microsoft.VisualStudioCode -e  ; winget install --id=Telegram.TelegramDesktop -e  ; winget install --id=Neovim.Neovim -e  ; winget install --id=yt-dlp.yt-dlp -e  ; winget install --id=Anaconda.Miniconda3 -e  ; winget install --id=Git.Git -e  ; winget install --id=EclipseAdoptium.Temurin.8 -e  ; winget install --id=EclipseAdoptium.Temurin.11.JDK -e  ; winget install --id=EclipseAdoptium.Temurin.17.JDK -e  ; winget install --id=Daum.PotPlayer -e  ; winget install --id=Bandisoft.Bandizip -e ;
+ winget install --id=voidtools.Everything -e  ; winget install --id=XunLei.xunlei -e  ; winget install --id=EuSoft.Eudic -e  ; winget install --id=Microsoft.VisualStudioCode -e  ; winget install --id=Telegram.TelegramDesktop -e   ; winget install --id=Daum.PotPlayer -e  ; winget install --id=Bandisoft.Bandizip -e ;winget install --id=GitHub.GitHubDesktop -e  ; winget install --id=Tencent.Foxmail -e  ; winget install --id=Tencent.QQ.NT -e  ; winget install --id=Vivaldi.Vivaldi -e  ; winget install --id=Tencent.WeChat -e  ; winget install --id=Bitwarden.Bitwarden -e  ; winget install --id=Baidu.BaiduNetdisk -e  ; winget install --id=Alibaba.aDrive -e  ; winget install --id=Emurasoft.EmEditor -e  ; winget install --id=Sogou.SogouInput -e  ; winget install --id=Rime.Weasel -e 
 ```
 
 - wsl2
