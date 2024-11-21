@@ -63,24 +63,33 @@ export ALL_PROXY="http://$host_ip:7890"
 1. 当前主机，当前用户的配置
 
    ```powershell
-   echo $profile	#查看配置文件路径
-   Test-Path $profile	#测试文件路径,看配置文件是否存在
-   New-Item -Path $profile -Type File –Force	#新项 配置文件# 路径 配置文件类型 文件强制
    
-   
-chcp 65001
-function openproxy() {
-   $Env:https_proxy="http://localhost:7897"
-   $Env:http_proxy="http://localhost:7897"
-}
-function closeproxy() {
-    $Env:https_proxy=""
-    $Env:http_proxy=""
-}
-New-Alias -Name note -Value emeditor
-#New-Alias -Name huya -Value $HOME\Documents\zhibo\huya.bat
-#oh-my-posh init pwsh --config C:\Users\sunho\amro.omp.json | Invoke-Expression
-New-Alias -Name m3u8 -Value D:\tools\N_m3u8DL-RE_Beta_win-x64\N_m3u8DL-RE
-Set-PSReadLineOption -EditMode Emacs  #启用linux风格的快捷键
-   
+    echo $profile	#查看配置文件路径
+    Test-Path $profile	#测试文件路径,看配置文件是否存在
+    New-Item -Path $profile -Type File –Force	#新项 配置文件# 路径 配置文件类型 文件强制
+
+    chcp 65001
+    function openproxy() {
+    $Env:https_proxy="http://localhost:7897"
+    $Env:http_proxy="http://localhost:7897"
+    }
+    function closeproxy() {
+        $Env:https_proxy=""
+        $Env:http_proxy=""
+    }
+    New-Alias -Name note -Value emeditor
+    #New-Alias -Name huya -Value $HOME\Documents\zhibo\huya.bat
+    #oh-my-posh init pwsh --config C:\Users\sunho\amro.omp.json | Invoke-Expression
+    New-Alias -Name m3u8 -Value D:\tools\N_m3u8DL-RE_Beta_win-x64\N_m3u8DL-RE
+    Set-PSReadLineOption -EditMode Emacs  #启用linux风格的快捷键
+    
    ```
+   
+## 微信多开
+
+```cmd
+start C:\"Program Files\Tencent\WeChat\"WeChat.exe
+start C:\"Program Files\Tencent\WeChat\"WeChat.exe
+exit
+
+```
